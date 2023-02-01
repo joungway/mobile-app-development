@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My App</string>
+    <string name="button_A">Pressed: A</string>
+    <string name="button_B">Pressed: B</string>
+    <string name="button_C">Pressed: C</string>
+    <string name="button_D">Pressed: D</string>
+    <string name="button_E">Pressed: E</string>
+    <string name="button_F">Pressed: F</string>
+    <string name="pressedOrigin">Pressed: -</string>
 </resources>
