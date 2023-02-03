@@ -33,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Create the Link Collector button
+        Button button3 = (Button)findViewById(R.id.Button3);
+        button3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LinkCollector.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
