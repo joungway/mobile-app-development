@@ -5,10 +5,10 @@ plugins {
 android {
     signingConfigs {
         myRelaseConfig {
-            storeFile file('/Users/joungway/AndroidStudioProjects/NUMAD23Sp_WeiZhang/keystore/ zw_keystore')
-            storePassword '123456'
-            keyPassword '123456'
-            keyAlias '123456'
+            storeFile file('/Users/joungway/AndroidStudioProjects/Untitled')
+            storePassword '123123'
+            keyPassword '123123'
+            keyAlias '123123'
         }
     }
     namespace 'edu.northeastern.myapplication'
