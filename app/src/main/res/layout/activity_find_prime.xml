@@ -8,54 +8,62 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/current_number_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Current Number:" />
-
-    <TextView
-        android:id="@+id/current_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/latest_prime_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:paddingTop="16dp"
         android:text="Latest Prime:"
-        android:paddingTop="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_number_text_view"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/latest_prime"
+        android:id="@+id/current_number_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="16dp">
-
-        <Button
-            android:id="@+id/find_primes_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Find Primes" />
-
-        <Button
-            android:id="@+id/terminate_search_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Terminate Search" />
-    </LinearLayout>
+        android:layout_marginTop="100dp"
+        android:text="Current Number: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pacifier_checkbox" />
 
     <CheckBox
         android:id="@+id/pacifier_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp"
         android:text="Pacifier Checkbox"
-        android:paddingTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/terminate_search_button" />
+
+    <Button
+        android:id="@+id/terminate_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Terminate Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/find_primes_button" />
+
+    <Button
+        android:id="@+id/find_primes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Find Primes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
