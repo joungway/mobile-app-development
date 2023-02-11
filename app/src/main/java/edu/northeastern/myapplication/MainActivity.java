@@ -44,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Create the Find Prime button
+        Button button4 = (Button)findViewById(R.id.Button4);
+        button4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FindPrime.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }
