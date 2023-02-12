@@ -10,6 +10,37 @@
 
 
     <TextView
+        android:id="@+id/current_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/latest_prime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/current_number_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/pacifier_checkbox" />
+
+    <TextView
+        android:id="@+id/current_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Number: "
+        app:layout_constraintBottom_toTopOf="@id/latest_prime_text_view"
+        app:layout_constraintEnd_toEndOf="@id/current_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pacifier_checkbox" />
+
+    <TextView
+        android:id="@+id/latest_prime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/latest_prime_text_view"
+        app:layout_constraintTop_toBottomOf="@id/current_number" />
+
+    <TextView
         android:id="@+id/latest_prime_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,20 +48,11 @@
         android:paddingTop="16dp"
         android:text="Latest Prime:"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/latest_prime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/current_number_text_view"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.924" />
 
-    <TextView
-        android:id="@+id/current_number_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Current Number: "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pacifier_checkbox" />
 
     <CheckBox
         android:id="@+id/pacifier_checkbox"
@@ -58,10 +80,10 @@
         android:id="@+id/find_primes_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="64dp"
         android:text="Find Primes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
