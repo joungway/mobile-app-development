@@ -105,11 +105,11 @@ public class FindPrime extends AppCompatActivity {
 //    }
 
     @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putInt("currentNumber", currentNumber);
-        savedInstanceState.putInt("latestPrime", latestPrime);
-        savedInstanceState.putBoolean("isPacifierChecked", pacifierCheckbox.isChecked());
-        super.onSaveInstanceState(savedInstanceState);
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putInt("currentNumber", currentNumber);
+        outState.putInt("latestPrime", latestPrime);
+        outState.putBoolean("isPacifierChecked", pacifierCheckbox.isChecked());
+        super.onSaveInstanceState(outState);
     }
 
 
