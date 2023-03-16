@@ -14,7 +14,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Button1" />
+        app:layout_constraintTop_toTopOf="@id/Button1"
+        app:layout_constraintVertical_bias="0.713" />
 
     <Button
         android:id="@+id/Button1"
@@ -54,9 +55,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find Prime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button3"
+        app:layout_constraintBottom_toTopOf="@+id/Button5"/>
+
+    <Button
+        android:id="@+id/Button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locator"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button3" />
+        app:layout_constraintTop_toBottomOf="@+id/Button4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
